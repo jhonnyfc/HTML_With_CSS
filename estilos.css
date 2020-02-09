@@ -1,0 +1,38 @@
+body{
+    background-color: indigo;
+}
+
+img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    background-color: blue;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content {
+    background-color: khaki;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: green;
+    padding: 0.5%;
+    text-align: center;
+}
+
+#cuerpo { 
+    background-color: azure;
+}
+
+#cuerpo table, th, td {
+    border-collapse: collapse;
+    border: 1px solid red;
+}

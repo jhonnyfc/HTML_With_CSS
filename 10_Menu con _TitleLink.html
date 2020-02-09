@@ -1,0 +1,81 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <a href="14_open_All.html">GoInidice</a>
+        <h1>Menú Principal: <a name="Inicio"></a></h1> 
+
+        <ol type="i">
+            <li> <a href="#Red Convolucional">Red Convolucional</a></li>
+            <li> <a href="#Gradiente">Gradiente</a></li>
+            <li> <a href="#Golbach">Golbach</a></li>
+            <li> <a href="#SVM">SVM</a> </li>
+        </ol>
+
+        <p>Se ha hecho una recoplacion de cosas interesantes</p>
+
+        <h2>Red Convolucional <a name="Red Convolucional"></a></h2>
+        <blockquote>
+            A convolutional neural network consists of an input and an output layer, as well as multiple hidden layers. The hidden layers of a CNN typically consist of a series of convolutional layers that convolve with a multiplication or other dot product. The activation function is commonly a RELU layer, and is subsequently followed by additional convolutions such as pooling layers, fully connected layers and normalization layers, referred to as hidden layers because their inputs and outputs are masked by the activation function and final convolution. The final convolution, in turn, often involves backpropagation in order to more accurately weight the end product.[10]
+
+            Though the layers are colloquially referred to as convolutions, this is only by convention. Mathematically, it is technically a sliding dot product or cross-correlation. This has significance for the indices in the matrix, in that it affects how weight is determined at a specific index point.[citation needed]
+            
+            Convolutional
+            When programming a CNN, the input is a tensor with shape (number of images) x (image width) x (image height) x (image depth). Then after passing through a convolutional layer, the image becomes abstracted to a feature map, with shape (number of images) x (feature map width) x (feature map height) x (feature map channels). A convolutional layer within a neural network should have the following attributes:
+            
+            Convolutional kernels defined by a width and height (hyper-parameters).
+            The number of input channels and output channels (hyper-parameter).
+            The depth of the Convolution filter (the input channels) must be equal to the number channels (depth) of the input feature map.
+            Convolutional layers convolve the input and pass its result to the next layer. This is similar to the response of a neuron in the visual cortex to a specific stimulus.[11]. Each convolutional neuron processes data only for its receptive field. Although fully connected feedforward neural networks can be used to learn features as well as classify data, it is not practical to apply this architecture to images. A very high number of neurons would be necessary, even in a shallow (opposite of deep) architecture, due to the very large input sizes associated with images, where each pixel is a relevant variable. For instance, a fully connected layer for a (small) image of size 100 x 100 has 10,000 weights for each neuron in the second layer. The convolution operation brings a solution to this problem as it reduces the number of free parameters, allowing the network to be deeper with fewer parameters.[12] For instance, regardless of image size, tiling regions of size 5 x 5, each with the same shared weights, requires only 25 learnable parameters. In this way, it resolves the vanishing or exploding gradients problem in training traditional multi-layer neural networks with many layers by using backpropagation.[citation needed]
+            
+            Pooling
+            Convolutional networks may include local or global pooling layers to streamline the underlying computation. Pooling layers reduce the dimensions of the data by combining the outputs of neuron clusters at one layer into a single neuron in the next layer. Local pooling combines small clusters, typically 2 x 2. Global pooling acts on all the neurons of the convolutional layer.[13][14] In addition, pooling may compute a max or an average. Max pooling uses the maximum value from each of a cluster of neurons at the prior layer.[15][16] Average pooling uses the average value from each of a cluster of neurons at the prior layer.[17]
+            
+            Fully connected
+            Fully connected layers connect every neuron in one layer to every neuron in another layer. It is in principle the same as the traditional multi-layer perceptron neural network (MLP). The flattened matrix goes through a fully connected layer to classify the images.
+            
+            Receptive field
+            In neural networks, each neuron receives input from some number of locations in the previous layer. In a fully connected layer, each neuron receives input from every element of the previous layer. In a convolutional layer, neurons receive input from only a restricted subarea of the previous layer. Typically the subarea is of a square shape (e.g., size 5 by 5). The input area of a neuron is called its receptive field. So, in a fully connected layer, the receptive field is the entire previous layer. In a convolutional layer, the receptive area is smaller than the entire previous layer.
+        </blockquote>
+        <a href="#Inicio">GoIni</a>
+
+        <h2>Gradiente <a name="Gradiente"></a></h2>
+        <blockquote>
+            Consider a room where the temperature is given by a scalar field, T, so at each point (x, y, z) the temperature is T(x, y, z). (Assume that the temperature does not change over time.) At each point in the room, the gradient of T at that point will show the direction in which the temperature rises most quickly. The magnitude of the gradient will determine how fast the temperature rises in that direction.
+
+            Consider a surface whose height above sea level at point (x, y) is H(x, y). The gradient of H at a point is a vector pointing in the direction of the steepest slope or grade at that point. The steepness of the slope at that point is given by the magnitude of the gradient vector.
+
+            The gradient can also be used to measure how a scalar field changes in other directions, rather than just the direction of greatest change, by taking a dot product. Suppose that the steepest slope on a hill is 40%. If a road goes directly up the hill, then the steepest slope on the road will also be 40%. If, instead, the road goes around the hill at an angle, then it will have a shallower slope. For example, if the angle between the road and the uphill direction, projected onto the horizontal plane, is 60°, then the steepest slope along the road will be 20%, which is 40% times the cosine of 60°.
+        </blockquote>
+        <a href="#Inicio">GoIni</a>
+        
+        <h2>Golbach <a name="Golbach"></a></h2>
+        <blockquote>
+            Esta conjetura había sido conocida por Descartes.2​ La siguiente afirmación es equivalente a la anterior y es la que se conjeturó originalmente en una carta de Goldbach a Euler en 1742:
+
+            Todo número entero mayor que 5 se puede escribir como suma de tres números primos.
+            Esta conjetura ha sido investigada por muchos teóricos de números y ha sido comprobada por ordenadores para todos los números pares menores que 1018. La mayor parte de los matemáticos creen que la conjetura es cierta, y se basan mayoritariamente en las consideraciones estadísticas sobre la distribución probabilística de los números primos en el conjunto de los números naturales: cuanto mayor sea el número entero par, se hace más «probable» que pueda ser escrito como suma de dos números primos.
+
+            A pesar de esto, los números naturales son infinitos y por lo tanto haber demostrado la conjetura para 1018 números no es suficiente ya que esto es solo una infinitésima parte del conjunto de números.
+
+            Sabemos que todo número par puede escribirse de forma mínima como suma de a lo más seis números primos. Como consecuencia de un trabajo de Vinográdov, todo número par lo bastante grande puede escribirse como suma de a lo más cuatro números primos. Además, Vinográdov demostró que casi todos los números pares pueden escribirse como suma de dos números primos (en el sentido de que la proporción de números pares que pueden escribirse de dicha forma tiende a 1). En 1966, Chen Jing-run mostró que todo número par lo bastante grande puede escribirse como suma de un primo y un número que tiene a lo más dos factores primos.
+
+            Con el fin de generar publicidad para el libro El tío Petros y la conjetura de Goldbach de Apostolos Doxiadis, el editor británico Tony Faber ofreció en 2000 un premio de un millón de dólares a aquel angloparlante que demostrase la conjetura antes de abril de 2002. Nadie reclamó el premio.
+
+            Goldbach formuló dos conjeturas relacionadas entre sí sobre la suma de números primos:2​ la conjetura 'fuerte' de Goldbach y la conjetura 'débil' de Goldbach. La que se discute aquí es la fuerte, y es la que se suele mencionar como «conjetura de Goldbach» a secas.
+
+            Se ha trabajado mucho en la conjetura débil, culminando en 2013 en una reivindicación del matemático peruano Harald Helfgott3​4​ sobre su demostración completa.
+        </blockquote>
+        <a href="#Inicio">GoIni</a>
+
+        <h2>SVM <a name="SVM"></a> </h2>
+        <blockquote>
+            In machine learning, support-vector machines (SVMs, also support-vector networks[1]) are supervised learning models with associated learning algorithms that analyze data used for classification and regression analysis. Given a set of training examples, each marked as belonging to one or the other of two categories, an SVM training algorithm builds a model that assigns new examples to one category or the other, making it a non-probabilistic binary linear classifier (although methods such as Platt scaling exist to use SVM in a probabilistic classification setting). An SVM model is a representation of the examples as points in space, mapped so that the examples of the separate categories are divided by a clear gap that is as wide as possible. New examples are then mapped into that same space and predicted to belong to a category based on the side of the gap on which they fall.
+
+            In addition to performing linear classification, SVMs can efficiently perform a non-linear classification using what is called the kernel trick, implicitly mapping their inputs into high-dimensional feature spaces.
+
+            When data are unlabelled, supervised learning is not possible, and an unsupervised learning approach is required, which attempts to find natural clustering of the data to groups, and then map new data to these formed groups. The support-vector clustering[2] algorithm, created by Hava Siegelmann and Vladimir Vapnik, applies the statistics of support vectors, developed in the support vector machines algorithm, to categorize unlabeled data, and is one of the most widely used clustering algorithms in industrial applications.[citation needed]
+        </blockquote>
+        <a href="#Inicio">GoIni</a>
+    </body>
+</html>
